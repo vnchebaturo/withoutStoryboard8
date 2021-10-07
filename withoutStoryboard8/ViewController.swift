@@ -13,17 +13,22 @@ class ViewController: UIViewController {
 
     let labelText = UILabel(text: "Начало игры. И раздача начальных 12 карт по 3 совподающих карты")
     
+    let buttonOne = UIButton(title: "Hello", backgroundColor: .blue, titleColor: .red, isShadow: true)
+    
+    let buttonTwo = UIButton(title: "Good Bye", backgroundColor: .blue, titleColor: .red, isShadow: true)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelText.textColor = .red
+        labelText.textColor = .blue
         view.backgroundColor = .gray
         setupConstraints()
 
     }
     
     private func setupConstraints() {
+        //настройки фона
         background.translatesAutoresizingMaskIntoConstraints = false    //свойство подключает маску
         view.addSubview(background)
         NSLayoutConstraint.activate([
@@ -32,9 +37,10 @@ class ViewController: UIViewController {
             background.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),  //крепим к верху с отступом 0
             background.centerXAnchor.constraint(equalTo: view.centerXAnchor)    //привязка в центру
         ])
-        
+        //настройки текста
         labelText.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(labelText)
+        
         NSLayoutConstraint.activate([                               //включает constreint
             labelText.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             labelText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -43,8 +49,32 @@ class ViewController: UIViewController {
         ])
         labelText.numberOfLines = 0
         labelText.textAlignment = .justified
+        
+        
+        _ = StackButton(button: buttonOne)
+        _ = StackButton(button: buttonTwo)
+        //настройки кнопок
+        let stackButtonView = UIStackView(arrangedSubviews: [buttonOne, buttonTwo])
+        
+        
+        
+        stackButtonView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackButtonView)
+        stackButtonView.axis = .vertical
+        stackButtonView.spacing = 20
+        
+        
+        stackButtonView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:  -40).isActive = true
+        stackButtonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+        //stackButtonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 40).isActive = true
+        stackButtonView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 }
+
+
+
+
+
 
 import SwiftUI
 struct ViewControllerProvider: PreviewProvider {

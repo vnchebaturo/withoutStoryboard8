@@ -14,7 +14,7 @@ extension UIButton {
     convenience init(title: String,
                      backgroundColor: UIColor,
                      titleColor: UIColor,
-                     isShow: Bool = true,  //тени
+                     isShadow: Bool,  //тени
                      cornerRadius: CGFloat = 5) {
         
         self.init(type: .system)

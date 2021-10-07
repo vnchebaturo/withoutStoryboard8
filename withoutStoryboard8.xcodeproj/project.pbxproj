@@ -15,6 +15,7 @@
 		452984CD270F2F7400EB69E8 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 452984CC270F2F7400EB69E8 /* Algorithms */; };
 		80407644270F68840069066F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80407643270F68840069066F /* UILabel.swift */; };
 		80407647270F6E1D0069066F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80407646270F6E1D0069066F /* UIButton.swift */; };
+		8040764A270F8BD70069066F /* StackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80407649270F8BD70069066F /* StackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		452984C5270F2E1000EB69E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80407643270F68840069066F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		80407646270F6E1D0069066F /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		80407649270F8BD70069066F /* StackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				80407645270F6DF40069066F /* UIKit */,
 				452984C0270F2E1000EB69E8 /* Assets.xcassets */,
 				452984BB270F2E0E00EB69E8 /* ViewController.swift */,
+				80407649270F8BD70069066F /* StackButton.swift */,
 				452984C2270F2E1000EB69E8 /* LaunchScreen.storyboard */,
 				452984C5270F2E1000EB69E8 /* Info.plist */,
 			);
@@ -168,6 +171,7 @@
 				452984BC270F2E0E00EB69E8 /* ViewController.swift in Sources */,
 				452984B8270F2E0E00EB69E8 /* AppDelegate.swift in Sources */,
 				80407644270F68840069066F /* UILabel.swift in Sources */,
+				8040764A270F8BD70069066F /* StackButton.swift in Sources */,
 				452984BA270F2E0E00EB69E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -292,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
