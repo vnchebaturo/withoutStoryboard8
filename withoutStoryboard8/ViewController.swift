@@ -9,13 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //let background = UIImageView(image: )
+    let background = UIImageView(image: #imageLiteral(resourceName: "1"))
+
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .gray
+        setupConstraints()
 
+    }
+    
+    private func setupConstraints() {
+        background.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(background)
+        NSLayoutConstraint.activate([
+        background.heightAnchor.constraint(equalToConstant: 900),
+        background.widthAnchor.constraint(equalToConstant: 415),
+        background.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+        background.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
 }
 
