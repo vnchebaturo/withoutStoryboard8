@@ -10,9 +10,9 @@
 		452984B8270F2E0E00EB69E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452984B7270F2E0E00EB69E8 /* AppDelegate.swift */; };
 		452984BA270F2E0E00EB69E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452984B9270F2E0E00EB69E8 /* SceneDelegate.swift */; };
 		452984BC270F2E0E00EB69E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452984BB270F2E0E00EB69E8 /* ViewController.swift */; };
-		452984BF270F2E0E00EB69E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452984BD270F2E0E00EB69E8 /* Main.storyboard */; };
 		452984C1270F2E1000EB69E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452984C0270F2E1000EB69E8 /* Assets.xcassets */; };
 		452984C4270F2E1000EB69E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452984C2270F2E1000EB69E8 /* LaunchScreen.storyboard */; };
+		452984CD270F2F7400EB69E8 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 452984CC270F2F7400EB69E8 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		452984B7270F2E0E00EB69E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		452984B9270F2E0E00EB69E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		452984BB270F2E0E00EB69E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		452984BE270F2E0E00EB69E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		452984C0270F2E1000EB69E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		452984C3270F2E1000EB69E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		452984C5270F2E1000EB69E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452984CD270F2F7400EB69E8 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				452984B7270F2E0E00EB69E8 /* AppDelegate.swift */,
 				452984B9270F2E0E00EB69E8 /* SceneDelegate.swift */,
 				452984BB270F2E0E00EB69E8 /* ViewController.swift */,
-				452984BD270F2E0E00EB69E8 /* Main.storyboard */,
 				452984C0270F2E1000EB69E8 /* Assets.xcassets */,
 				452984C2270F2E1000EB69E8 /* LaunchScreen.storyboard */,
 				452984C5270F2E1000EB69E8 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = withoutStoryboard8;
+			packageProductDependencies = (
+				452984CC270F2F7400EB69E8 /* Algorithms */,
+			);
 			productName = withoutStoryboard8;
 			productReference = 452984B4270F2E0E00EB69E8 /* withoutStoryboard8.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 452984AB270F2E0E00EB69E8;
+			packageReferences = (
+				452984CB270F2F7300EB69E8 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 452984B5270F2E0E00EB69E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				452984C4270F2E1000EB69E8 /* LaunchScreen.storyboard in Resources */,
 				452984C1270F2E1000EB69E8 /* Assets.xcassets in Resources */,
-				452984BF270F2E0E00EB69E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		452984BD270F2E0E00EB69E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				452984BE270F2E0E00EB69E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		452984C2270F2E1000EB69E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +290,6 @@
 				INFOPLIST_FILE = withoutStoryboard8/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +317,6 @@
 				INFOPLIST_FILE = withoutStoryboard8/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		452984CB270F2F7300EB69E8 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		452984CC270F2F7400EB69E8 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 452984CB270F2F7300EB69E8 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 452984AC270F2E0E00EB69E8 /* Project object */;
 }
