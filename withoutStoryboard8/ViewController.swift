@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     let labelText = UILabel(text: "Начало игры. И раздача начальных 12 карт по 3 совподающих карты")
     
-    
     let buttonOne = UIButton(title: "Hello", backgroundColor: .blue, titleColor: .red, isShadow: true)
     
     let buttonTwo = UIButton(title: "Good Bye", backgroundColor: .blue, titleColor: .red, isShadow: true)
