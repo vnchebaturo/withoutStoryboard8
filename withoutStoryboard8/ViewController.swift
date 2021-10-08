@@ -9,24 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let background = UIImageView(image: #imageLiteral(resourceName: "1"))
+    let background = UIImageView(image: #imageLiteral(resourceName: "2"))
 
-    let labelText = UILabel(text: "Начало игры. И раздача начальных 12 карт по 3 совподающих карты")
+    var labelText = UILabel(text: "Начало игры. И раздача начальных 12 карт по 3 совподающих карты, можно добавлять по 3 карты в игру, но не более 24")
+   // labelText.font = UIFont(name: "Ubb", size: 30)
+   
+    let buttonOne = UIButton(title: "Hello", backgroundColor: .black, titleColor: .white, isShadow: true)
     
-    let buttonOne = UIButton(title: "Hello", backgroundColor: .blue, titleColor: .red, isShadow: true)
+    let buttonTwo = UIButton(title: "Раздать 3 карты", backgroundColor: .black, titleColor: .white, isShadow: true)
+   
+//    var  masButton = [StackButton(button: buttonOne), StackButton(button: buttonTwo)]
+   //masButton.append(buttonOne)
     
-    let buttonTwo = UIButton(title: "Good Bye", backgroundColor: .blue, titleColor: .red, isShadow: true)
-    
-    
+//---------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
-        labelText.textColor = .blue
         view.backgroundColor = .gray
         setupConstraints()
 
     }
-    
+//---------------------------------------------------
     private func setupConstraints() {
         //настройки фона
         background.translatesAutoresizingMaskIntoConstraints = false    //свойство подключает маску
@@ -49,6 +53,8 @@ class ViewController: UIViewController {
         ])
         labelText.numberOfLines = 0
         labelText.textAlignment = .justified
+        labelText.textColor = .white
+        labelText.font = labelText.font.withSize(20)
         
         
         _ = StackButton(button: buttonOne)
@@ -64,7 +70,7 @@ class ViewController: UIViewController {
         stackButtonView.spacing = 20
         
         
-        stackButtonView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:  -40).isActive = true
+        stackButtonView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:  -60).isActive = true
         stackButtonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         //stackButtonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 40).isActive = true
         stackButtonView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -73,13 +79,12 @@ class ViewController: UIViewController {
 
 
 
-
-
+//MARK: SwiftUI
 
 import SwiftUI
 struct ViewControllerProvider: PreviewProvider {
     static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all)  //заполнить все
+        ContainerView().edgesIgnoringSafeArea(.all).previewInterfaceOrientation(.portrait)  //заполнить все
     }
     
     struct ContainerView: UIViewControllerRepresentable {
