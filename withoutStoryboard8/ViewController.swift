@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         setupConstraints()
 
     }
-    
+    //ph
     private func setupConstraints() {
         //настройки фона
         background.translatesAutoresizingMaskIntoConstraints = false    //свойство подключает маску
